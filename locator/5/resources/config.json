@@ -1,7 +1,18 @@
 {
-    "TextHeight": 32,
-    "Padding":    12.0,
-    "ScrnWidth":  1024,
-    "ScrnHeight": 600,
-    "UsbDevice":  "usb-Sycreader_RFID_Technology_Co.__Ltd_SYC_ID_IC_USB_Reader_08FF20140315-event-kbd"
+    "lcdDisplay" : {
+        "addr" : 39,
+        "rows" : 4,
+        "cols" : 20
+    },
+    "usbDevice": "usb-Sycreader_RFID_Technology_Co.__Ltd_SYC_ID_IC_USB_Reader_08FF20140315-event-kbd",
+    "server"   : {
+        "https"    : false,
+        "domain"   : "localHost",
+        "port"     : 8081   
+    },
+    "gpio" : [
+        { "name" : "input",  "pin"  : "GPIO17", "input" : true },
+        { "name" : "output", "pin"  : "GPIO27", "input" : true }
+    ]
+
 }
